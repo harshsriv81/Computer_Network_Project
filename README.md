@@ -1,77 +1,73 @@
-Research Paper on Networking Protocols in
-Computer Networks
-Abstract: Computer networks rely on communication protocols to enable reliable data transmission
-and seamless connectivity between heterogeneous devices. Networking protocols define rules,
-formats, and procedures for exchanging information across various network layers. This research
-paper explores the key types of networking protocols, their architectures, functionalities, and roles
-in ensuring interoperability, efficiency, and security. The study also analyzes protocol evolution from
-traditional models such as TCP/IP and OSI to modern developments like HTTP/3, QUIC, and
-Software-Defined Networking (SDN)-based communication. Performance, reliability, and security
-comparisons are made to identify future trends and challenges in protocol design.
 
-1.  Introduction
-    A computer network connects multiple computing devices for the purpose of communication and
-    resource sharing. For effective communication, a common set of rules—known as networking
-    protocols—is required. Protocols ensure that devices from different manufacturers can
-    communicate seamlessly without ambiguity. Networking protocols operate at various layers of the
-    OSI (Open Systems Interconnection) and TCP/IP models, defining how data is packaged,
-    transmitted, routed, and received. Common examples include IP, TCP, UDP, HTTP, FTP, and
-    SMTP. This paper aims to study the structure, functions, and comparative performance of key
-    networking protocols, alongside their modern evolutions in response to emerging technologies such
-    as IoT, 5G, and cloud computing.
-2.  Literature Review
-    Early studies on network communication focused on point-to-point data transfer. The introduction of
-    ARPANET in the 1970s led to the development of TCP/IP, which became the foundation of the
-    Internet (Cerf & Kahn, 1974). The OSI model, developed later by ISO, provided a theoretical
-    reference for protocol design. Research has evolved to address scalability and security issues,
-    leading to the development of secure protocols like HTTPS, SSL/TLS, and IPSec. Recent works
-    also emphasize QoS (Quality of Service) protocols and SDN (Software-Defined Networking)
-    protocols, which separate the control and data planes for better management and automation.
-    Studies also explore lightweight protocols like MQTT and CoAP in IoT networks.
-3.  Networking Protocol Architecture
-    Networking protocols are organized in layers to ensure modular design and efficient data handling.
-    The OSI model consists of seven layers—Application, Presentation, Session, Transport, Network,
-    Data Link, and Physical—each performing a unique function. The TCP/IP model, a simplified
-    practical version, includes four layers: Application, Transport, Internet, and Network Access. These
-    layers ensure scalability, interoperability, and efficiency in data communication.
-4.  Key Networking Protocols
-    Important protocols include IP (Internet Protocol) for addressing and routing, TCP (Transmission
-    Control Protocol) for reliable data delivery, and UDP (User Datagram Protocol) for faster,
-    connectionless communication. HTTP/HTTPS are used for web communication; FTP and SFTP for
-    file transfers; SMTP, POP3, and IMAP for email; DNS for domain name resolution; ICMP for error
-    reporting; and DHCP for dynamic IP addressing.
-5.  Methodology
-    The research methodology involved comparative analysis of different networking protocols based
-    on functionality, performance, and security. Simulation studies using tools like Cisco Packet Tracer
-    and Wireshark were conducted to observe packet exchange, delay, and reliability. Additionally,
-    literature from IEEE, ACM, and Springer databases was reviewed to understand protocol evolution
-    and emerging trends.
-6.  Analysis and Results
-    Simulations indicate that TCP offers high reliability but suffers from overhead due to connection
-    setup. UDP provides low latency, making it suitable for real-time applications. HTTPS ensures data
-    confidentiality through encryption but adds computational overhead. The QUIC protocol combines
-    TCP and TLS features, offering reduced latency and improved security. Lightweight protocols like
-    MQTT and CoAP outperform HTTP in IoT environments due to their efficiency.
-7.  Discussion
-    Networking protocols continue to evolve in response to new demands. Security remains a primary
-    concern, with protocols like HTTPS and IPSec mitigating risks. Scalability issues in large networks
-    are addressed by SDN protocols like OpenFlow. Latency reduction is vital for 5G and IoT, leading
-    to new transport protocols like QUIC. Interoperability between emerging and legacy systems
-    remains crucial.
-8.  Future Trends
-    The future of networking protocols involves AI-driven network management, quantum networking
-    for ultra-secure communications, IPv6 expansion to replace IPv4, and edge computing integration
-    for latency optimization.
-9.  Conclusion
-    Networking protocols form the foundation of all digital communication. Their layered architecture
-    ensures interoperability and scalability. From traditional TCP/IP to advanced QUIC and SDN-based
-    designs, protocols demonstrate adaptability to technological changes. Future innovations will focus
-    on improving security, speed, and intelligent automation for next-generation networks.
-    References
-10. Cerf, V. G., & Kahn, R. E. (1974). A protocol for packet network intercommunication. IEEE
-    Transactions on Communications, 22(5), 637–648.
-11. Tanenbaum, A. S., & Wetherall, D. (2011). Computer Networks (5th ed.). Pearson.
-12. Stallings, W. (2017). Data and Computer Communications (10th ed.). Pearson.
-13. RFC 793 – Transmission Control Protocol. Internet Engineering Task Force (IETF).
-14. Google (2017). QUIC: A UDP-Based Secure and Reliable Transport for HTTP/2. IETF Draft.
-15. Cisco Systems. Networking Basics and Protocols – White Paper.
+# Networking Protocol Explorer
+
+An interactive, modern web application designed to help users explore and understand various computer networking protocols. This project, created by Harsh Srivastav, serves as a visual and educational tool for students, developers, and anyone curious about the building blocks of the internet.
+
+![Networking Protocol Explorer Screenshot](https://i.imgur.com/example.png) 
+*(Note: Screenshot is a placeholder)*
+
+## ✨ Features
+
+- **Interactive Protocol Cards**: Browse protocols with smooth hover effects and expandable snippets for quick insights.
+- **Detailed Modal Views**: Click on any protocol to open a detailed view with a full description, key characteristics, and an animated visual diagram.
+- **Animated SVG Diagrams**: Custom-built, animated diagrams for each protocol to visually explain concepts like TCP's three-way handshake, UDP's connectionless nature, and more.
+- **Powerful Search**: Instantly filter protocols by name, full name, or description.
+- **Category Filtering**: Easily sort protocols by their layer (Transport, Application, Network).
+- **Side-by-Side Comparison**: An intuitive comparison mode to analyze two protocols against each other based on key metrics like reliability, speed, and connection type.
+- **Responsive Design**: A fully responsive and mobile-friendly interface for a seamless experience on any device.
+- **Modern Tech Stack**: Built with React, TypeScript, and Tailwind CSS for a performant and maintainable application.
+
+## 📚 Protocols Covered
+
+The explorer currently includes detailed information and diagrams for the following protocols:
+
+- **TCP** (Transmission Control Protocol)
+- **UDP** (User Datagram Protocol)
+- **IP** (Internet Protocol)
+- **HTTP** (Hypertext Transfer Protocol)
+- **HTTPS** (Hypertext Transfer Protocol Secure)
+- **DNS** (Domain Name System)
+- **FTP** (File Transfer Protocol)
+- **SMTP** (Simple Mail Transfer Protocol)
+
+## 🛠️ Technologies Used
+
+- **Frontend**: [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Animations**: CSS Animations & Transitions
+
+## 🚀 How to Use
+
+1.  **Browse**: Scroll through the grid of protocol cards. Hover over a card to see a tooltip with more information.
+2.  **Expand**: Click a card once to expand it and see a brief description snippet.
+3.  **View Details**: Click the "View Details" button or click an already expanded card to open the modal with in-depth information and the animated diagram.
+4.  **Search**: Use the search bar at the top to find a specific protocol.
+5.  **Filter**: Click the category buttons (`All`, `Transport`, etc.) to filter the list.
+6.  **Compare**: Click the "Compare Protocols" button to switch to comparison mode. Select two protocols from the dropdowns to see a side-by-side analysis.
+
+## 📂 Project Structure
+
+```
+/
+├── components/
+│   ├── diagrams/         # Animated SVG diagrams for each protocol
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── ProtocolCard.tsx
+│   ├── ProtocolComparison.tsx
+│   └── ProtocolDetailsModal.tsx
+├── constants.ts          # Centralized data for all protocols
+├── types.ts              # TypeScript type definitions
+├── App.tsx               # Main application component
+├── index.html            # Entry HTML file
+└── index.tsx             # React application entry point
+```
+
+## 📝 Credits
+
+This project was designed and developed as a computer networking project by **Harsh Srivastav** & **Anupam Bhargav**.
+
+---
+
+This README provides a comprehensive overview of the Networking Protocol Explorer application.
